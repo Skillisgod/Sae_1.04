@@ -2,14 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="{{ asset('css/style1.css') }}">
+        <link rel="stylesheet" href="{{ asset('style1.css') }}">
     </head>
 
 <body>
+<nav class="navbar">
+        <a href="#" class="logo">IDEE</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="/">Accueil</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/cv">Cv</a></li>
+                <li><a href="/projets">Mes projets</a></li>
+            </ul>
+        </div>
+        <img src="{{ asset('menu-btn.png') }}" class="menu-btn">
+    </nav>
+    <div class="centre">
     <div class="containert">
         <div class="cardt">
             <div class="contentt">
-                <h2>01</h2>
                 <h3>Mon profil</h3>
                 <div class="contenu">
                     <span class="photo">la photo</span>
@@ -59,15 +71,25 @@
         </div>
     </div>
     </div>
+    </div>  
+    <script>
+        
+</script>
     <script type="text/javascript" src="{{ asset('js/vanilla-tilt.js') }}"></script>
     <script>
-        VanillaTilt.init(document.querySelectorAll(".card"), {
-		max: 25,
+    const menuHamburger = document.querySelector(".menu-btn")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+    });
+        VanillaTilt.init(document.querySelectorAll(".cardt"), {
+		max: 15,
 		speed: 400,
         glare: true,
         "maw-glare": 1,
 	});
-        VanillaTilt.init(document.querySelectorAll(".cardt"), {
+        VanillaTilt.init(document.querySelectorAll(".card"), {
 		max: 25,
 		speed: 400,
         glare: true,

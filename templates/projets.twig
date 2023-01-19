@@ -1,0 +1,32 @@
+<!doctype htlm>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ asset('style1.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">IDEE</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/cv">Cv</a></li>
+                <li class="active"><a href="/projets">Mes projets</a></li>
+            </ul>
+        </div>
+        <img src="{{ asset('menu-btn.png') }}" class="menu-btn">
+    </nav>
+    <script>
+        const menuHamburger = document.querySelector(".menu-btn")
+            const navLinks = document.querySelector(".nav-links")
+    
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        });
+    </script>
+</body>
+
+</html>
