@@ -19,12 +19,125 @@
         </div>
         <img src="{{ asset('menu-btn.png') }}" class="menu-btn">
     </nav>
+    <div class="download"><button class="telechargementcv"><a class="formu" href="/formulaire">Télecharger mon Cv</a></button></div>
+    <div class="cartescv">
+        <div class="carte1">
+            <div class="container">
+                <div class="cardcv">
+                    <div class="img">
+                        <img src="{{ asset('realisation.png') }}" class="imgs">
+                    </div>
+                    <div class="content">
+                        <h3>
+                            Mes réalisations
+                        </h3>
+                        <ul class="difcv">
+                            <li>Développement en html et css de sites internet</li>
+                            <li>Création de chaines Youtube concernant le sport et les jeux vidéos</li>
+                            <li>Montages vidéos</li>
+                            <li>Configuration du réseau familial (box, ordinateurs individuels...)</li>
+                            <li>Création de capteur au travers d'esp B266</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cardcv">
+                    <div class="img">
+                        <img src="{{ asset('experiences.png') }}" class="imgs">
+                    </div>
+                    <div class="content">
+                        <h3>
+                            Mes expériences professionnelles
+                        </h3>
+                        <ul class="difcv">
+                            <li>Stage d'observation (3ème)</li>
+                                <ul class="sousliste">
+                                    <li>Atelier Vert (Fleuriste), Montluel</li>
+                                    <li>Mise en oeuvre de ma créativité afin de concevoir des vitrines de noël conforment aux attendus des commenditaires tout en respectant les budgets (choix des fleurs)</li>  
+                                </ul>
+                            <li>Emploi saisonnier</li>
+                                <ul class="sousliste">
+                                    <li>Gaston et fils (Castration du maïs), Mimizan</li>
+                                    <li>Ceci m'a permis d'appréhender les exigences de rentabilité d'une entreprise, auquel nous avons répondu par un travail individuel mais également par une réelle collaboration entre employés. J'ai également du faire part d'une adaptabilité lié à la maturité du maïs et aux aspect climatique</li>   
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cardcv">
+                    <div class="img">
+                        <img src="{{ asset('formation.png') }}" class="imgs">
+                    </div>
+                    <div class="content">
+                        <h2>
+                            02
+                        </h2>
+                        <h3>
+                            Curiculum Vitae
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur error in maiores ipsam ullam debitis nam facere praesentium autem accusamus dicta repellendus officiis, vero tenetur porro suscipit blanditiis quo?</p>
+                        <a href="cv.html">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carte2">
+            <div class="container">
+                <div class="cardcv">
+                    <div class="img">
+                        <img src="{{ asset('interet.png') }}" class="imgs">
+                    </div>
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>Curiculum Vitae</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur error in maiores ipsam ullam debitis nam facere praesentium autem accusamus dicta repellendus officiis, vero tenetur porro suscipit blanditiis quo?</p>
+                        <a href="cv.html">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cardcv">
+                    <div class="img">
+                        <img src="{{ asset('langues.png') }}" class="imgs">
+                    </div>
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>Curiculum Vitae</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur error in maiores ipsam ullam debitis nam facere praesentium autem accusamus dicta repellendus officiis, vero tenetur porro suscipit blanditiis quo?</p>
+                        <a href="cv.html">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cardcv">
+                    <div class="img">
+                        <img src="{{ asset('competences.png') }}" class="imgs">
+                    </div>
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>Curiculum Vitae</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur error in maiores ipsam ullam debitis nam facere praesentium autem accusamus dicta repellendus officiis, vero tenetur porro suscipit blanditiis quo?</p>
+                        <a href="cv.html">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{ asset('js/vanilla-tilt.js') }}"></script>
     <script>
         const menuHamburger = document.querySelector(".menu-btn")
             const navLinks = document.querySelector(".nav-links")
     
             menuHamburger.addEventListener('click',()=>{
             navLinks.classList.toggle('mobile-menu')
+        });
+            VanillaTilt.init(document.querySelectorAll(".cardcv"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "maw-glare": 1,
         });
     </script>
 </body>

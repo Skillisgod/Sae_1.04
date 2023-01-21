@@ -39,4 +39,12 @@ class DamsController extends AbstractController
             'controller_name' => 'DamsController',
         ]);
     }
+
+    #[Route('/formulaire', name: 'formulaire')]
+    public function formulaire(): Response
+    {
+        return $this->render('formulaire.twig', [
+            'controller_name' => 'DamsController',
+        ]);
+    }
 }
