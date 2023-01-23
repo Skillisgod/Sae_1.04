@@ -8,14 +8,14 @@
 
 <body>
 <div class="body">
-    <div class="formulaire">
-  <form >
-    <p>Bienvenue</p>
-    <input type="email" placeholder="Email"><br>
-    <input type="tel" placeholder="Numéro de téléphone"><br>
-    <input type="button" value="Télecharger mon CV"><br>
-    <a class="a" href="/">Revenir à l'accueil</a>
-  </form>
+  <div class="formulaire">
+    <form method="post" action="download.php" target="blank">
+      <p class="p">Bienvenue</p>
+      <input type="email" placeholder="Email" required><br>
+      <input type="tel" placeholder="Numéro de téléphone" required><br>
+      <button class="boutontelecharger" type="submit">Télecharger mon CV</button><br>
+      <a class="a" href="/">Revenir à l'accueil</a>
+    </form>
 
   <div class="drop drop-1"></div>
   <div class="drop drop-2"></div>
@@ -24,6 +24,10 @@
   <div class="drop drop-5"></div>
 </div>
 </div>
+<div class="footer">
+        <p>Footer</p>
+        <br><p>&copy;2023 Villevet_Damien Tous droits réservés</p>
+    </div>
 </body>
 
 </html>

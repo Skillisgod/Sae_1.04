@@ -12,6 +12,12 @@
     align-items: center;
     justify-content: center;
 }
+.footer{
+    margin-top: 50px;
+    height: 30vh;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
 .navbar{
     padding: 50px;
     display: flex;
@@ -140,6 +146,7 @@ body::after{
     font-size: 2em;
     color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
+    font-family: 'Courier New', Courier, monospace;
 }
 .container .card:hover > .title{
     display: none;
@@ -157,16 +164,18 @@ body::after{
 }
 .container .card .content h2{
     position: absolute;
-    top: -80px;
-    right: 30px;
+    top: -110px;
+    right: -40px;
     font-size: 8em;
     color: rgba(255, 255, 255, 0.05);
     pointer-events: none;
+    margin: 20px;
 }
 .container .card .content h3{
     font-size: 1.8em;
     color: #fff;
     z-index: 1;
+    margin-bottom: 20px;
 }
 .container .card .content p{
     font-size: 1em;
@@ -191,7 +200,20 @@ body::after{
     align-items: center;
     justify-content: center;
 }
+.cartespf{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 .cartescv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cartespj{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -201,10 +223,22 @@ body::after{
 .carte1{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+.carte1pf{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.carte1pj{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .carte2{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .containert{
     display: flex;
@@ -225,6 +259,20 @@ body::after{
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+}
+.containert .cardt .photo{
+    position: relative;
+    height: 270px;
+    margin: 20px;
+}
+.containert .cardt .texte{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.containert .cardt .texte .reseaux{
+    display: flex;
+    align-items: center;
 }
 .containert .cardt .title{
     position: absolute;
@@ -249,11 +297,12 @@ body::after{
     color: rgba(255, 255, 255, 0.05);
     pointer-events: none;
 }
-.containert .cardt .contentt h3{
+.containert .cardt h3{
     font-size: 1.8em;
     color: #fff;
     z-index: 1;
     padding: 0.5rem;
+    margin-bottom: 15px;
 }
 .containert .cardt .contentt p{
     font-size: 1em;
@@ -275,6 +324,8 @@ body::after{
 .contenu{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 .container .cardcv{
     position: relative;
@@ -295,11 +346,12 @@ body::after{
 }
 .container .cardcv .title{
     position: absolute;
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
     pointer-events: none;
 }
-.container .cardcv:hover > .img{
+.container .cardcv:hover > .title{
     display: none;
 }
 .container .cardcv .content{
@@ -361,9 +413,13 @@ body::after{
     background:-webkit-linear-gradient(#f00,#f0f);
     cursor: pointer;
 }
-.img{
-    position: absolute;
-    top: 5%;
+.img-1{
+    position: relative;
+    left: 90px;
+}
+.img-2{
+    position: relative;
+    left: 100px;
 }
 .difcv{
     color: white;
@@ -372,6 +428,7 @@ body::after{
 .sousliste{
     list-style: none;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 .formu{
     color: white;
@@ -389,7 +446,7 @@ body::after{
 form{
     background: rgba(255, 255, 255, .3);
     padding: 3rem;
-    height: 420px;
+    height: 520px;
     border-radius: 20px;
     border-left: 1px solid rgba(255, 255, 255, .3);
     border-top: 1px solid rgba(255, 255, 255, .3);
@@ -399,13 +456,13 @@ form{
     box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
     text-align: center;
 }
-p{
+.p{
     color: white;
     font-weight: 500;
     opacity: .7;
     font-size: 1.4rem;
-    margin-bottom: 60px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    margin-bottom: 60px;
 }
     
 .a{
@@ -427,6 +484,33 @@ input{
     border-left: 1px solid rgba(255, 255, 255, .3);
     border-top: 1px solid rgba(255, 255, 255, .3);
     padding: 1rem;
+    width: 300px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    transition: all .3s;
+    margin-bottom: 3em;
+}
+input:hover,input[type="email"]:focus,input[type="tel"]:focus{
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+}
+    
+.boutontelecharger{
+    margin-top: 10px;
+    width: 200px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    padding: 1rem;
     width: 200px;
     border-radius: 50px;
     backdrop-filter: blur(5px);
@@ -439,18 +523,9 @@ input{
     transition: all .3s;
     margin-bottom: 2em;
 }
-input:hover,
-input[type="email"]:focus,
-input[type="password"]:focus{
-  background: rgba(255,255,255,0.1);
-  box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
-}
-    
-input[type="button"]{
-  margin-top: 10px;
-  width: 200px;
-  font-size: 1rem;
-  cursor: pointer;
+.boutontelecharger:hover{
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
 }
 
 ::placeholder {
@@ -493,4 +568,197 @@ input[type="button"]{
     height: 60px; width: 60px;
     bottom: 100px; left: -30px;
     z-index: -1;
+}
+.photo{
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.rs{
+    box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+    margin: 0 10px;
+}
+.rs-1{
+    height: 30px; width: 30px;
+    border-radius: 4px;
+}
+.rs-2{
+    height: 30px; width: 30px;
+}
+.profil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.elements{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+}
+.reseaux{
+    align-items: center;
+}
+.container .cardpf{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.container .cardpf .title{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+}
+.container .cardpf:hover > .title{
+    display: none;
+}
+.container .cardpf .cartedevpf{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .cardpf .cartedevpf:hover{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .cardpf .content{
+    padding: 30px;
+}
+.container .cardpf .content h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.container .cardpf .content h3{
+    font-size: 1.8em;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.container .cardpf .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.container .cardpf .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.devpf{
+    width: 100%;
+    height: 40%;
+}
+.lipf{
+    list-style: inside;
+}
+.container .cardpj{
+    position: relative;
+    width: 2000px;
+    height: 700px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.container .cardpj .title{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+}
+.container .cardpj:hover > .title{
+    display: none;
+}
+.container .cardpj .cartedevpf{
+    height: 700px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .cardpj .cartedevpf:hover{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .cardpj .content{
+    padding: 30px;
+}
+.container .cardpj .content h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.container .cardpj .content h3{
+    font-size: 1.8em;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.container .cardpj .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.container .cardpj .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.lienspj{
+    display: flex;
+    justify-content: center;
+}
+.pj{
+    width: 100%;
+    height: 25%;
+}
+.pj1{
+    width: 100%;
+    height: 40%;
 }

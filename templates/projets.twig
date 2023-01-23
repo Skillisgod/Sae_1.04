@@ -19,12 +19,77 @@
         </div>
         <img src="{{ asset('menu-btn.png') }}" class="menu-btn">
     </nav>
+        <div class="cartespj">
+            <div class="carte1pj">
+                <div class="container">
+                    <div class="cardpj">
+                        <div class="title">
+                            Site internet
+                        </div>
+                        <div class="cartedevpf">
+                            <img src="{{ asset('internet.png') }}" class="pj1">
+                            <div class="content">
+                                <h3>
+                                    Site internet
+                                </h3>
+                                <ul class="difcv">
+                                    <li>J'ai mis en place une chaine Youtube par loisir. Elle me permet de montrer mes capacités en montage vidéos</li>
+                                    <li class="lipf">J'utilise le logiciel de montage "Première pro" qui me permet de découvrir énormément de nouveautés</li>
+                                    <br>
+                                    <div class="lienspj">
+                                        <a href="https://skillisgod.github.io/Skillisgod/index.html" target="blank">En savoir plus</a>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cartespj">
+            <div class="carte1pj">
+                <div class="container">
+                    <div class="cardpj">
+                        <div class="title">
+                            Chaine Youtube
+                        </div>
+                        <div class="cartedevpf">
+                            <img src="{{ asset('yt.png') }}" class="pj">
+                            <div class="content">
+                                <h3>
+                                    Chaine Youtube
+                                </h3>
+                                <ul class="difcv">
+                                    <li>J'ai mis en place un site internet concernant le surf (ma passion) sur les différentes compétitions ext...</li>
+                                    <li class="lipf">J'ai réalisé ce site internet pour mon intérêt général et l'ai mis en ligne par le bias de Github</li>
+                                    <br>
+                                    <div class="lienspj">
+                                        <a href="https://www.youtube.com/shorts/rXtguGTjOQc" target="blank">En savoir plus</a>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+        <p>Footer</p>
+        <br><p>&copy;2023 Villevet_Damien Tous droits réservés</p>
+    </div>
+    <script type="text/javascript" src="{{ asset('js/vanilla-tilt.js') }}"></script>    
     <script>
         const menuHamburger = document.querySelector(".menu-btn")
             const navLinks = document.querySelector(".nav-links")
     
             menuHamburger.addEventListener('click',()=>{
             navLinks.classList.toggle('mobile-menu')
+        });
+        VanillaTilt.init(document.querySelectorAll(".cardpj"), {
+            max: 10,
+            speed: 400,
+            glare: true,
+            "maw-glare": 1,
         });
     </script>
 </body>

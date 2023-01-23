@@ -19,12 +19,122 @@
         </div>
         <img src="{{ asset('menu-btn.png') }}" class="menu-btn">
     </nav>
+    <div class="cartespf">
+        <div class="carte1pf">
+            <div class="container">
+                <div class="cardpf">
+                    <div class="title">
+                        Développement Web
+                    </div>
+                    <div class="cartedevpf">
+                        <img src="{{ asset('dev.jpg') }}" class="devpf">
+                        <div class="content">
+                            <h3>
+                                Développement Web
+                            </h3>
+                            <ul class="difcv">
+                                <li>Développement en html et css de sites internet</li>
+                                <li class="lipf">Plusieurs projet mis en ligne sur Github dont celui-ci</li>
+                                <li class="lipf">Projet de site internet profesionnel en développement</li>
+                                <br>
+                                <div class="lienspj">
+                                    <a href="https://github.com/Skillisgod/Skillisgod" target="blank">En savoir plus</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cardpf">
+                    <div class="title">
+                        Programmation
+                    </div>
+                   <div class="cartedevpf">
+                        <img src="{{ asset('prograpf.png') }}" class="devpf">
+                        <div class="content">
+                            <h3>
+                                Programmation
+                            </h3>
+                            <ul class="difcv">
+                                <li>Développement en html et css de sites internet</li>
+                                <li class="lipf">Plusieurs projet mis en ligne sur Github dont celui-ci</li>
+                                <li>Montages vidéos</li>
+                                <li>Configuration du réseau familial (box, ordinateurs individuels...)</li>
+                                <li>Création de capteur au travers d'esp B266</li>
+                            </ul>
+                            <div class="lienspj">
+                                <a href="https://github.com/Skillisgod/Skillisgod" target="blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="container">
+                    <div class="cardpf">
+                        <div class="title">
+                            Réseau
+                        </div>
+                    <div class="cartedevpf">
+                            <img src="{{ asset('rspf.jpg') }}" class="devpf">
+                            <div class="content">
+                                <h3>
+                                    Réseau
+                                </h3>
+                                <ul class="difcv">
+                                    <li>Développement en html et css de sites internet</li>
+                                    <li class="lipf">Plusieurs projet mis en ligne sur Github dont celui-ci</li>
+                                    <li>Montages vidéos</li>
+                                    <li>Configuration du réseau familial (box, ordinateurs individuels...)</li>
+                                    <li>Création de capteur au travers d'esp B266</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carte2pf">
+                    <div class="container">
+                    <div class="cardpf">
+                        <div class="title">
+                            Montage vidéos
+                        </div>
+                    <div class="cartedevpf">
+                            <img src="{{ asset('montagepf.jpg') }}" class="devpf">
+                            <div class="content">
+                                <h3>
+                                    Montage vidéos
+                                </h3>
+                                <ul class="difcv">
+                                    <li>Développement en html et css de sites internet</li>
+                                    <li class="lipf">Plusieurs projet mis en ligne sur Github dont celui-ci</li>
+                                    <li>Montages vidéos</li>
+                                    <li>Configuration du réseau familial (box, ordinateurs individuels...)</li>
+                                    <li>Création de capteur au travers d'esp B266</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="footer">
+        <p>Footer</p>
+        <br><p>&copy;2023 Villevet_Damien Tous droits réservés</p>
+    </div>
+    <script type="text/javascript" src="{{ asset('js/vanilla-tilt.js') }}"></script>
     <script>
         const menuHamburger = document.querySelector(".menu-btn")
             const navLinks = document.querySelector(".nav-links")
     
             menuHamburger.addEventListener('click',()=>{
             navLinks.classList.toggle('mobile-menu')
+        });
+        VanillaTilt.init(document.querySelectorAll(".cardpf"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "maw-glare": 1,
         });
     </script>
 </body>
